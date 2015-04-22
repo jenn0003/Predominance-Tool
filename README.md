@@ -32,9 +32,9 @@ This tool uses the gap (or Margin of Dominance) output from the previous tool to
 
 First, input the feature class you are interested in analyzing. This should be the same feature class you used in the Calculate Gap tool. Next, choose a predominance option that tells the tool what criteria the maximum field must meet to be considered significant. The three options are as follows:
 
-1.	Over the mean (OVER_MEAN): Compares each predominance gap to the mean of all gap values within the dataset.
-2.	Over the mean + standard deviation (OVER_STD): Compares each predominance gap to the mean of all gap values plus an additional standard deviation. The choices for the standard deviation are 1, .5, or .33.
-3.	Over a user-specified value (USER_SPEC): Compares the gap to a user-inputted value.
+1.	<b>Over the mean</b> (OVER_MEAN): Compares each predominance gap to the mean of all gap values within the dataset.
+2.	<b>Over the mean + standard deviation</b> (OVER_STD): Compares each predominance gap to the mean of all gap values plus an additional standard deviation. The choices for the standard deviation are 1, .5, or .33.
+3.	<b>Over a user-specified value</b> (USER_SPEC): Compares the gap to a user-inputted value.
 
 If the user-specified value is selected as the Predominance Option, enter the value. If you are not using a specified value, leave this section blank. If using the standard deviation option, choose between 1, .5, or .33 from the dropdown menu. After, click “OK” to run the tool.
 
@@ -70,11 +70,11 @@ b.	Predominant Field Over Specified Gap (DomOverSpec): Outputs the predominant f
 c.	Predominant Field Alias Over Specified Gap (UserDomAlias): Outputs the alias of the predominant field if it meets the requirement of being over the user-inputted value. If not, it outputs “No Predominance Over Specified Gap”.
 d.	Specified Gap Transparency Value (SpecGapTrans): If the predominant field meets the significance requirement, the transparency is set to 0. If not, the transparency is calculated with the following equation: ((average gap – gap)/average gap)*100)
 
-Mapping Predominance
+### 3. Mapping Predominance
 
 After running the Calculate Gap Tool and the Calculate Predominance tool, try mapping the predominant fields. To do this, right-click on the feature class in the Table of Contents and click on “Properties”. Go to the “Symbology” tab and click on the “Categories” section. In the Value Field, choose the field that was outputted from the Calculate Predominance tool (e.g., Predominant Field Over Mean Gap). Click “Add All Values”. Then click on the “Advanced” button to enable a transparency rule. Choose the field related to transparency (e.g., Mean Gap Transparency Value). Click “OK” to see the results on the map. 
 
-This type of predominance mapping is beneficial in showing how much more dominant one area is when compared to another. The solid areas (with less transparency) have a greater predominance gap than areas that are more transparent. One example of this type of mapping can be found in this [predominant race map](http://urbanobservatory.maps.arcgis.com/home/webmap/viewer.html?layers=0fd7dc7c53c34b03ab4475d895b5d32f&useExisting=1). 
+This type of predominance mapping is beneficial in showing how much more dominant one area is when compared to another. The solid areas (with less transparency) have a greater predominance gap than areas that are more transparent. One example of this type of mapping can be found in this [predominant race map](http://urbanobservatory.maps.arcgis.com/home/webmap/viewer.html?layers=0fd7dc7c53c34b03ab4475d895b5d32f&useExisting=1 "Predominant Population Map"). 
 
 
 
