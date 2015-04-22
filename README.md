@@ -38,13 +38,13 @@ First, input the feature class you are interested in analyzing. This should be t
 
 If the user-specified value is selected as the Predominance Option, enter the value. If you are not using a specified value, leave this section blank. If using the standard deviation option, choose between 1, .5, or .33 from the dropdown menu. After, click “OK” to run the tool.
 
-The tool adds fields to the attribute table depending on which Predominance Option you choose:
+The tool <b>adds fields</b> to the attribute table depending on which Predominance Option you choose:
 
-1.	If using “Over the mean”:
-a.	Mean Gap (MeanGap): Calculates the average gap value of all the dominant margins.
-b.	Predominant Field Over Mean Gap (DomOverMean): Outputs the predominant field if it meets the requirement of being over the mean gap value. If not, it outputs “No Predominance Over Mean”.
-c.	Predominant Field Alias Over Mean Gap (MeanDomAlias): Outputs the alias of the predominant field if it meets the requirement of being over the mean gap value. If not, it outputs “No Predominance Over Mean”.
-d.	Mean Gap Transparency (MeanGapTrans): If the predominant field meets the significance requirement, the transparency is set to 0. If not, the transparency is calculated with the following equation: ((average gap – gap)/average gap)*100)
+1.	If using <b>“Over the mean”</b>:
+    * <b>Mean Gap</b> (MeanGap): Calculates the average gap value of all the dominant margins.
+    * <b>Predominant Field Over Mean Gap</b> (DomOverMean): Outputs the predominant field if it meets the requirement of being over the mean gap value. If not, it outputs “No Predominance Over Mean”.
+    * <b>Predominant Field Alias Over Mean Gap</b> (MeanDomAlias): Outputs the alias of the predominant field if it meets the requirement of being over the mean gap value. If not, it outputs “No Predominance Over Mean”.
+    * <b>Mean Gap Transparency</b> (MeanGapTrans): If the predominant field meets the significance requirement, the transparency is set to 0. If not, the transparency is calculated with the following equation: ((average gap – gap)/average gap)*100)
 
 2.	If using “Over the mean + 1 standard deviation”:
 a.	1 Std Gap (OneSDGap): Calculates the average gap value plus one standard deviation of all the dominant margins.
